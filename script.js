@@ -10,41 +10,56 @@ console.log (userAge)
 const priceButton = document.getElementById('price-button')
 console.log (priceButton)
 
-priceButton.addEventListener('click', function(){
+const priceForm = document.getElementById('container-ticket')
+console.log (priceForm)
 
-    const userKmInNumber = parseInt (userKm.value)
-    console.log (userKmInNumber)
+priceForm.addEventListener('submit', function(event){
 
-    const userAgeInNumber = parseInt (userAge.value)
-    console.log (userKmInNumber)
+    event.preventDefault();
 
-    const ticketPrice = (userKmInNumber * 0.21)
+    const userKmInNumber = parseInt (userKm.value);
+    console.log (userKmInNumber);
 
-    console.log ( 'price', ticketPrice, typeof ticketPrice )
+    const userAgeInNumber = parseInt (userAge.value);
+    console.log (userKmInNumber);
 
-    let discount = 0
+    const ticketPrice = (userKmInNumber * 0.21);
+
+    console.log ( 'price', ticketPrice, typeof ticketPrice );
+
+    let discount = 0;
 
     if ( userAgeInNumber < 18) {
-        discount = ( (ticketPrice * 20) / 100 )
-        // oppure price *= 0.8 (perche 0.8 è 100%-20% di sconto = 80% = 0.8)
+        discount = ( (ticketPrice * 20) / 100 );
 
-        discountedPrice = ( ticketPrice - discount )
-        console.log ('discountedprice', discountedPrice, typeof discountedPrice)
+        discountedPrice = ( ticketPrice - discount );
+        console.log ('discountedprice', discountedPrice, typeof discountedPrice);
     }
 
     else if ( userAge > 65 ) {
-        discount = ( (ticketPrice * 40) / 100 )
-        // oppure price *= 0.6 (perche 0.6 è 100%-40% di sconto = 60% = 0.6)
+        discount = ( (ticketPrice * 40) / 100 );
 
-        discountedPrice = ( ticketPrice - discount )
-        console.log ('discountedprice', discountedPrice, typeof discountedPrice)
+        discountedPrice = ( ticketPrice - discount );
+        console.log ('discountedprice', discountedPrice, typeof discountedPrice);
     }
 
-    let myTicket = document.getElementById ('my-ticket')
-    myTicket.innerHTML = 'My ticket price is ' + (discountedPrice).toFixed(2) + '€'
-    console.log (myTicket)
+    let myTicket = document.getElementById ('my-ticket');
+    myTicket.innerHTML = 'My ticket price is ' + (discountedPrice).toFixed(2) + '€' ;
+    console.log (myTicket);
 
 })
+
+//const resetButton = document.getElementById('reset-button');
+// console.log (resetButton);
+
+// resetButton.addEventListener('click', function(){ 
+
+
+
+
+
+
+//})
 
 
 
