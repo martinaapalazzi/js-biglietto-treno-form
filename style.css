@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container-ticket {
+#container-ticket {
     flex-direction: column;
     display: flex;
 }

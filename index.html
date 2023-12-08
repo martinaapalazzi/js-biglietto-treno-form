@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <title>calcolo del prezzo del biglietto del treno</title>
 </head>
 <body>
 
-    <form class="container-ticket" method="get">
+    <form id="container-ticket" method="get">
 
         <div class="container-name-km">
             <label for="nome">
@@ -18,7 +20,7 @@
                 name="nome" 
                 type="text" 
                 required
-                placeholder="Nome & Cognome">
+                placeholder="Inserisci Nome & Cognome">
             <label for="km">
                 Quanti km vorresti percorrere?
             </label>
@@ -27,14 +29,32 @@
                 name="km" 
                 type="text" 
                 required
-                placeholder="Km">
+                placeholder="Inserisci Km">
+            <label for="age">
+                Quanti anni hai?
+            </label>
+            <input
+                id="age"
+                name="age" 
+                type="text" 
+                required
+                placeholder="Inserisci età">
         </div>
         
-        <button type="submit">
-            Genera
-        </button>
+        <div class="container-buttons">
+            <button type="submit">
+                Genera
+            </button>
+            <button type="submit">
+                Annulla
+            </button>
+        </div>
+        
 
     </form>
+
+
+    <script src="script.js"></script>
     
 </body>
 </html>
