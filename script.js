@@ -41,7 +41,7 @@ priceButton.addEventListener('click', function(){
     }
 
     let myTicket = document.getElementById ('my-ticket')
-    myTicket.innerHTML = 'My ticket price is ' + discountedPrice + '€'
+    myTicket.innerHTML = 'My ticket price is ' + (discountedPrice).toFixed(2) + '€'
     console.log (myTicket)
 
 })
@@ -50,14 +50,4 @@ priceButton.addEventListener('click', function(){
 
 
 
-
-
-//const startForm = document.getElementById ('container-ticket')
-//console.log (startForm)
-
-//startForm.addEventListener('click', function(){
-
-
-
-//})
 
