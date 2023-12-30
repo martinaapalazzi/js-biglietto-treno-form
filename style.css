@@ -1,10 +1,87 @@
+/* RESET */
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+.header-container {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+}
+
+.container-logo {
+    width: 300px;
+    padding: 20px;
+}
+
+.container-shortcuts {
+    display: flex;
+    gap: 2em;
+    padding: 40px 0px;
+    
+}
+
+.container-shortcuts > button {
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.container-shortcuts > button:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+/* MAIN */
+
+.container-main {
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(174, 64, 64);
+}
+
+.title {
+    text-transform: uppercase;
+    text-decoration: double;
+    text-align: center;
+    padding: 30px 0px;
+    color: rgb(255, 255, 255);
+}
+
 #container-ticket {
     flex-direction: column;
     display: flex;
+}
+
+.container-name-km {
+    display: flex;
+    gap: 1em;
+    padding-bottom: 20px;
+}
+
+.container-buttons > button {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+#my-ticket {
+    padding-top: 40px;
+    text-decoration: wavy;
+    color: rgb(30, 30, 30);
+    text-shadow: 2px 2px 4px #ffffff;
 }

@@ -44,7 +44,7 @@ priceForm.addEventListener('submit', function(event){
     }
 
     let myTicket = document.getElementById ('my-ticket');
-    myTicket.innerHTML = 'My ticket price is ' + (discountedPrice).toFixed(2) + '€' ;
+    myTicket.innerHTML = 'My ticket price is ' + discountedPrice.toFixed(2) + '€' ;
     console.log (myTicket);
 
 })
